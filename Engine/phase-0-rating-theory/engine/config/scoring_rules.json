@@ -1,0 +1,13 @@
+{
+  "description": "Phase 0 scoring config. Sourced from Engine/phase-0-rating-theory/formula.md and resolved-questions.md. Edit this file to change scoring behaviour — no rule values are hardcoded in engine code.",
+  "points_table": [
+    {"min": 0, "max": 2, "points": 2},
+    {"min": 3, "max": 4, "points": 4},
+    {"min": 5, "max": 5, "points": 7},
+    {"min": 6, "max": 6, "points": 10}
+  ],
+  "reduction_rules": [
+    {"pair": [7, 5], "resolved": [6, 4], "note": "7-5 set: -1 both sides"},
+    {"pair": [7, 6], "resolved": [6, 4], "note": "tiebreak set: always resolves 6-4 for the set winner, per Director_2"}
+  ]
+}
