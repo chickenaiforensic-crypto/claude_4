@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 0 — Rating Audit</title>
+<style>
+  :root {
+    --court: #0d1f16;
+    --court-2: #123322;
+    --line: #eef2ea;
+    --ball: #d7f24a;
+    --ball-dim: #a8bd3f;
+    --ink: #0d1b12;
+    --muted: #8fa595;
+    --danger: #ff6b5e;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--court);
+    color: var(--line);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+  }
+  .display { font-family: 'IBM Plex Mono', 'Courier New', monospace; }
+
+  header {
+    padding: 28px 20px 18px;
+    border-bottom: 1px solid rgba(238,242,234,0.12);
+  }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ball);
+    margin: 0 0 6px;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 6px; }
+
+  main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 620px) {
+    .controls { grid-template-columns: 1fr; }
+  }
+
+  .field label {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  select {
+    width: 100%;
+    background: var(--court-2);
+    border: 1px solid rgba(238,242,234,0.18);
+    color: var(--line);
+    padding: 12px 14px;
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+  }
+  select:focus-visible {
+    outline: 2px solid var(--ball);
+    outline-offset: 2px;
+  }
+  select:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  .status {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    min-height: 18px;
+    margin-bottom: 18px;
+  }
+  .status.error { color: var(--danger); }
+
+  .scoreboard {
+    background: var(--court-2);
+    border: 1px solid rgba(238,242,234,0.14);
+    border-radius: 14px;
+    padding: 28px;
+    display: none;
+  }
+  .scoreboard.show { display: block; }
+
+  .board-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .board-player { font-size: 18px; font-weight: 700; }
+  .board-tourn { font-size: 13px; color: var(--muted); }
+
+  .total-points {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: clamp(48px, 12vw, 76px);
+    color: var(--ball);
+    line-height: 1;
+    margin: 14px 0 4px;
+  }
+  .total-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .divider { height: 1px; background: rgba(238,242,234,0.12); margin: 22px 0; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 9px 8px; }
+  thead th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid rgba(238,242,234,0.14);
+  }
+  tbody tr { border-bottom: 1px solid rgba(238,242,234,0.06); }
+  tbody tr:last-child { border-bottom: none; }
+  .pts-cell { font-family: 'IBM Plex Mono', monospace; color: var(--ball-dim); font-weight: 600; }
+  .flag {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 20px;
+    background: rgba(255,107,94,0.15);
+    color: var(--danger);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .empty-note { color: var(--muted); font-size: 13px; padding: 30px 0; text-align: center; }
+
+  footer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Phase 0 · Audit</p>
+  <h1>Tournament Points Lookup</h1>
+  <p class="sub">Live from MANIFEST.json + edition data — nothing on this page is precomputed.</p>
+</header>
+
+<main>
+  <div class="controls">
+    <div class="field">
+      <label for="tournament">1 · Tournament</label>
+      <select id="tournament">
+        <option value="">Loading tournaments…</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="player">2 · Player</label>
+      <select id="player" disabled>
+        <option value="">Select a tournament first</option>
+      </select>
+    </div>
+  </div>
+
+  <p class="status" id="status"></p>
+
+  <div class="scoreboard" id="scoreboard">
+    <div class="board-top">
+      <div class="board-player" id="boardPlayer"></div>
+      <div class="board-tourn" id="boardTourn"></div>
+    </div>
+    <div class="total-points" id="totalPoints">0</div>
+    <div class="total-label">Total points earned</div>
+
+    <div class="divider"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Edition</th>
+          <th>Round</th>
+          <th>Opponent</th>
+          <th>Score</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody id="matchRows"></tbody>
+    </table>
+    <div class="empty-note" id="emptyNote" style="display:none;">No matches found for this player in this tournament.</div>
+  </div>
+</main>
+
+<footer>
+  Data source: chickenaiforensic-crypto/claude_4 · data/tennis · Engine/phase-0-rating-theory/engine/config/scoring_rules.json
+</footer>
+
+<script>
+const RAW_BASE = "https://raw.githubusercontent.com/chickenaiforensic-crypto/claude_4/main/data/tennis";
+const CONFIG_URL = "https://raw.githubusercontent.com/chickenaiforensic-crypto/claude_4/main/Engine/phase-0-rating-theory/engine/config/scoring_rules.json";
+
+const tournamentSelect = document.getElementById('tournament');
+const playerSelect = document.getElementById('player');
+const statusEl = document.getElementById('status');
+const scoreboard = document.getElementById('scoreboard');
+const boardPlayer = document.getElementById('boardPlayer');
+const boardTourn = document.getElementById('boardTourn');
+const totalPointsEl = document.getElementById('totalPoints');
+const matchRowsEl = document.getElementById('matchRows');
+const emptyNote = document.getElementById('emptyNote');
+
+let manifest = null;
+let scoringConfig = null;
+let currentTournamentMatches = []; // [{edition, match}]
+
+function setStatus(msg, isError) {
+  statusEl.textContent = msg || '';
+  statusEl.className = 'status' + (isError ? ' error' : '');
+}
+
+// ---- Scoring logic: JS port of Engine/phase-0-rating-theory/engine/scorer.py ----
+// Zero hardcoded rule values — everything read from scoringConfig.
+
+function parseScore(scoreStr) {
+  const sets = [];
+  if (!scoreStr) return sets;
+  const setRe = /^(\d+)-(\d+)(?:\((\d+)\))?$/;
+  for (const token of scoreStr.trim().split(/\s+/)) {
+    const m = setRe.exec(token);
+    if (!m) { sets.push({ raw: token, unparsed: true }); continue; }
+    sets.push({ gamesA: parseInt(m[1], 10), gamesB: parseInt(m[2], 10) });
+  }
+  return sets;
+}
+
+function pairSortedDesc(a, b) { return a >= b ? [a, b] : [b, a]; }
+
+function isSetComplete(gA, gB, reductionRules) {
+  const [hi, lo] = pairSortedDesc(gA, gB);
+  for (const rule of reductionRules) {
+    const [rh, rl] = rule.pair;
+    if (rh === hi && rl === lo) return true;
+  }
+  return hi >= 6 && (hi - lo) >= 2;
+}
+
+function applyReduction(gA, gB, reductionRules) {
+  const winnerIsA = gA > gB;
+  let [hi, lo] = winnerIsA ? [gA, gB] : [gB, gA];
+  for (const rule of reductionRules) {
+    const [rh, rl] = rule.pair;
+    if (rh === hi && rl === lo) { [hi, lo] = rule.resolved; break; }
+  }
+  return winnerIsA ? [hi, lo] : [lo, hi];
+}
+
+function lookupPoints(games, pointsTable) {
+  for (const tier of pointsTable) {
+    if (games >= tier.min && games <= tier.max) return tier.points;
+  }
+  return null;
+}
+
+function scoreMatch(scoreStr, config) {
+  const reductionRules = config.reduction_rules;
+  const pointsTable = config.points_table;
+  const parsed = parseScore(scoreStr);
+  let pointsA = 0, pointsB = 0;
+  const setsExcluded = [];
+
+  for (const s of parsed) {
+    if (s.unparsed) { setsExcluded.push({ reason: 'unparsed_token', raw: s.raw }); continue; }
+    const { gamesA: gA, gamesB: gB } = s;
+    if (!isSetComplete(gA, gB, reductionRules)) {
+      setsExcluded.push({ reason: 'incomplete_set', gamesA: gA, gamesB: gB });
+      continue;
+    }
+    const [rA, rB] = applyReduction(gA, gB, reductionRules);
+    const pA = lookupPoints(rA, pointsTable);
+    const pB = lookupPoints(rB, pointsTable);
+    if (pA === null || pB === null) {
+      setsExcluded.push({ reason: 'no_tier_match', gamesA: gA, gamesB: gB });
+      continue;
+    }
+    pointsA += pA;
+    pointsB += pB;
+  }
+  return { pointsA, pointsB, setsExcluded };
+}
+
+// ---- Data loading ----
+
+async function fetchJSON(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Fetch failed (${res.status}): ${url}`);
+  return res.json();
+}
+
+async function init() {
+  try {
+    setStatus('Loading manifest and scoring config…');
+    [manifest, scoringConfig] = await Promise.all([
+      fetchJSON(`${RAW_BASE}/MANIFEST.json`),
+      fetchJSON(CONFIG_URL)
+    ]);
+
+    const tournaments = [...new Set(manifest.editions.map(e => e.tournament))].sort();
+    tournamentSelect.innerHTML = '<option value="">Select a tournament</option>' +
+      tournaments.map(t => `<option value="${t}">${t}</option>`).join('');
+    setStatus('');
+  } catch (err) {
+    setStatus('Failed to load data: ' + err.message, true);
+  }
+}
+
+async function onTournamentChange() {
+  const tournament = tournamentSelect.value;
+  scoreboard.classList.remove('show');
+  playerSelect.disabled = true;
+  playerSelect.innerHTML = '<option value="">Select a tournament first</option>';
+  currentTournamentMatches = [];
+
+  if (!tournament) return;
+
+  try {
+    setStatus(`Loading editions for ${tournament}…`);
+    const editions = manifest.editions.filter(e => e.tournament === tournament);
+    const loaded = await Promise.all(editions.map(async ed => {
+      const data = await fetchJSON(`${RAW_BASE}/${ed.file_path}`);
+      return (data.matches || []).map(m => ({ edition: ed, match: m }));
+    }));
+    currentTournamentMatches = loaded.flat();
+
+    const players = new Set();
+    for (const { match } of currentTournamentMatches) {
+      if (match.playerA) players.add(match.playerA);
+      if (match.playerB) players.add(match.playerB);
+    }
+    const sortedPlayers = [...players].sort();
+
+    playerSelect.innerHTML = '<option value="">Select a player</option>' +
+      sortedPlayers.map(p => `<option value="${p}">${p}</option>`).join('');
+    playerSelect.disabled = false;
+    setStatus(`${sortedPlayers.length} players found across ${editions.length} edition(s) of ${tournament}.`);
+  } catch (err) {
+    setStatus('Failed to load tournament data: ' + err.message, true);
+  }
+}
+
+function onPlayerChange() {
+  const player = playerSelect.value;
+  const tournament = tournamentSelect.value;
+  if (!player) { scoreboard.classList.remove('show'); return; }
+
+  let total = 0;
+  const rows = [];
+
+  for (const { edition, match } of currentTournamentMatches) {
+    let side = null;
+    if (match.playerA === player) side = 'A';
+    else if (match.playerB === player) side = 'B';
+    else continue;
+
+    const result = scoreMatch(match.score || '', scoringConfig);
+    const earned = side === 'A' ? result.pointsA : result.pointsB;
+    total += earned;
+
+    rows.push({
+      year: edition.year,
+      round: match.round || '—',
+      opponent: side === 'A' ? match.playerB : match.playerA,
+      score: match.score || '—',
+      points: earned,
+      excludedCount: result.setsExcluded.length
+    });
+  }
+
+  boardPlayer.textContent = player;
+  boardTourn.textContent = tournament;
+  totalPointsEl.textContent = total;
+
+  rows.sort((a, b) => String(a.year).localeCompare(String(b.year)));
+
+  if (rows.length === 0) {
+    matchRowsEl.innerHTML = '';
+    emptyNote.style.display = 'block';
+  } else {
+    emptyNote.style.display = 'none';
+    matchRowsEl.innerHTML = rows.map(r => `
+      <tr>
+        <td>${r.year}</td>
+        <td>${r.round}</td>
+        <td>${r.opponent}</td>
+        <td class="display">${r.score}</td>
+        <td class="pts-cell">${r.points}${r.excludedCount ? `<span class="flag">${r.excludedCount} excl.</span>` : ''}</td>
+      </tr>
+    `).join('');
+  }
+
+  scoreboard.classList.add('show');
+  setStatus('');
+}
+
+tournamentSelect.addEventListener('change', onTournamentChange);
+playerSelect.addEventListener('change', onPlayerChange);
+init();
+</script>
+
+</body>
+</html>
