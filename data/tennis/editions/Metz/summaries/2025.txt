@@ -1,0 +1,10 @@
+Metz — Metz (ATP250)
+Edition: 2025
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Learner Tien
+Runner-up: Cameron Norrie
+Source: Wikipedia 2025 Moselle Open - Singles infobox: Draw 28 (4Q/3WC), Seeds 8, top-4 byes (FAA/Medvedev/Griekspoor withdrew; census byes Bublik/Cobolli + Added/Echargui in vacated slots)
+Checksum: dea82a765af7... (full value in MANIFEST.json)

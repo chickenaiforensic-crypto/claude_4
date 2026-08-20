@@ -1,0 +1,10 @@
+Tokyo — Tokyo (ATP500)
+Edition: 2024
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Arthur Fils
+Runner-up: Ugo Humbert
+Source: Wikipedia 2024 Japan Open Tennis Championships - Singles infobox: Draw 32 (4Q/3WC), Seeds 8
+Checksum: d7d5a34323f5... (full value in MANIFEST.json)

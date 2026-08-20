@@ -1,0 +1,10 @@
+Dubai — Dubai Tennis Championships (ATP500)
+Edition: 2022
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Andrey Rublev
+Runner-up: Jiri Vesely
+Source: Wikipedia 2022 Dubai Tennis Championships infobox
+Checksum: 3cb8ed988a9a... (full value in MANIFEST.json)

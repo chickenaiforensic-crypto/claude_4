@@ -1,0 +1,10 @@
+Antwerp — Antwerp (ATP250)
+Edition: 2022
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Felix Auger-Aliassime
+Runner-up: Sebastian Korda
+Source: TE 2022 bracket byte-read: 32 slots, 4 byes (seeds 1-4 Hurkacz/Auger-Aliassime/Schwartzman/Khachanov) = draw 28
+Checksum: 4fa0b7efadae... (full value in MANIFEST.json)

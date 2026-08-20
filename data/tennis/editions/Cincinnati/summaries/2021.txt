@@ -1,0 +1,10 @@
+Cincinnati — Cincinnati (M1000)
+Edition: 2021
+Draw size: 56
+Status: closed_verified_gapless
+Match count: 55
+Round coverage: R64(24) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Ashleigh Barty
+Runner-up: Jil Teichmann
+Source: Tennis Explorer 2021 full bracket: 56 field incl. 8 listed byes (top-8 seeds)
+Checksum: bfae7bc3996c... (full value in MANIFEST.json)

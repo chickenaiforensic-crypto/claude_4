@@ -1,0 +1,10 @@
+Stockholm — Stockholm (ATP250)
+Edition: 2022
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Holger Rune
+Runner-up: Stefanos Tsitsipas
+Source: Structural proof: 28-draw complete on pull (12/8/4/2/1, 4 byes: Norrie/Shapovalov/Tiafoe/Tsitsipas)
+Checksum: b2ebd4355f9f... (full value in MANIFEST.json)

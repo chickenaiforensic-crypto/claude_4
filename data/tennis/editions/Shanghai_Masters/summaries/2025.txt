@@ -1,0 +1,10 @@
+Shanghai Masters — Shanghai Masters (M1000)
+Edition: 2025
+Draw size: 96
+Status: closed_verified_gapless
+Match count: 95
+Round coverage: R128(32) R64(32) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Valentin Vacherot
+Runner-up: Arthur Rinderknech
+Source: Draw 96 structural proof (32 R128 matches + 32 seed byes, all rounds full)
+Checksum: 0f0ad48b1257... (full value in MANIFEST.json)

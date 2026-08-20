@@ -1,0 +1,10 @@
+Rotterdam — ABN AMRO Open (ATP500)
+Edition: 2025
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Carlos Alcaraz
+Runner-up: Alex de Minaur
+Source: Wikipedia 2025 ABN AMRO Open infobox
+Checksum: d1d0a0799926... (full value in MANIFEST.json)

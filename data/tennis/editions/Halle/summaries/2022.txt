@@ -1,0 +1,10 @@
+Halle — Halle Open (ATP500)
+Edition: 2022
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Hubert Hurkacz
+Runner-up: Daniil Medvedev
+Source: Wikipedia 2022 Halle Open infobox
+Checksum: cf8075893edc... (full value in MANIFEST.json)

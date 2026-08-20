@@ -1,0 +1,10 @@
+Tokyo — Tokyo (WTA500)
+Edition: 2022
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Liudmila Samsonova
+Runner-up: Qinwen Zheng
+Source: TE 2022 bracket byte-read: 32 slots, 4 byes (seeds 1-4 Badosa/Garcia/Muguruza/Kudermetova) = draw 28. Note: TE header labels 2022 'indoors'; store keeps outdoor-hard classification consistently - source-classification conflict flagged, not altered
+Checksum: 57f28b8e2fd2... (full value in MANIFEST.json)

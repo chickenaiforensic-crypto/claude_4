@@ -1,0 +1,10 @@
+Zhengzhou — Zhengzhou (WTA500)
+Edition: 2023
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Qinwen Zheng
+Runner-up: Barbora Krejcikova
+Source: Wikipedia 2023 Zhengzhou Open infobox: Draw 28, Seeds 8, byes to top-4 non-withdrawn seeds
+Checksum: e1cc75f16c17... (full value in MANIFEST.json)

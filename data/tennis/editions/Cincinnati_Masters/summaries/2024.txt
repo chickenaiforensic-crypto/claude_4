@@ -1,0 +1,10 @@
+Cincinnati Masters — Cincinnati Masters (M1000)
+Edition: 2024
+Draw size: 56
+Status: closed_verified_gapless
+Match count: 55
+Round coverage: R64(24) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Jannik Sinner
+Runner-up: Frances Tiafoe
+Source: Wikipedia 2024 Cincinnati Open - Men's singles infobox: Draw 56, Seeds 16, top-8 seeds bye
+Checksum: 2a1e39a11c86... (full value in MANIFEST.json)

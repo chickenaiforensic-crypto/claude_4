@@ -1,0 +1,10 @@
+Metz — Metz (ATP250)
+Edition: 2024
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Benjamin Bonzi
+Runner-up: Cameron Norrie
+Source: TE 2024 bracket byte-read: 32 slots, 4 byes (Rublev, Ruud + Van Assche LL and De Jong Q in vacated bye slots) = draw 28
+Checksum: 47ce01632423... (full value in MANIFEST.json)

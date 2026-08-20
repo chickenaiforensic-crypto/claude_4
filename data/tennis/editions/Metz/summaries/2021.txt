@@ -1,0 +1,10 @@
+Metz — Metz (ATP250)
+Edition: 2021
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Hubert Hurkacz
+Runner-up: Pablo Carreno Busta
+Source: Wikipedia 2021 Moselle Open - Singles infobox: Draw 28 (4Q/3WC), Seeds 8, top-4 byes
+Checksum: c64843aaf5c3... (full value in MANIFEST.json)

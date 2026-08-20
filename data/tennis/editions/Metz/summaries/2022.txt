@@ -1,0 +1,10 @@
+Metz — Metz (ATP250)
+Edition: 2022
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Lorenzo Sonego
+Runner-up: Alexander Bublik
+Source: TE 2022 bracket byte-read: 32 slots, 4 byes (seeds 1-4 Medvedev/Hurkacz/Musetti/Rune) = draw 28
+Checksum: 9679cb0fd266... (full value in MANIFEST.json)

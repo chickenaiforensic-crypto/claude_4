@@ -1,0 +1,10 @@
+Cleveland — Cleveland (WTA250)
+Edition: 2024
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: McCartney Kessler
+Runner-up: Beatriz Haddad Maia
+Source: Wikipedia 2024 Tennis in the Land - Singles infobox: Draw 32 (4Q/3WC), Seeds 8
+Checksum: aabf557a5e83... (full value in MANIFEST.json)

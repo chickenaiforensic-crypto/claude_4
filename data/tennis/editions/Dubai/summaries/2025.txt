@@ -1,0 +1,10 @@
+Dubai — Dubai Tennis Championships (ATP500)
+Edition: 2025
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Stefanos Tsitsipas
+Runner-up: Felix Auger-Aliassime
+Source: Wikipedia 2025 Dubai Tennis Championships infobox
+Checksum: 50eab7fa5c39... (full value in MANIFEST.json)

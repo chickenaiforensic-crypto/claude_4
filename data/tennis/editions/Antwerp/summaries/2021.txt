@@ -1,0 +1,10 @@
+Antwerp — Antwerp (ATP250)
+Edition: 2021
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Jannik Sinner
+Runner-up: Diego Schwartzman
+Source: TE 2021 bracket byte-read: 32 slots, 4 byes (seeds 1-4 Sinner/Schwartzman/Garin/Bautista-Agut) = draw 28
+Checksum: 00b181a0a18d... (full value in MANIFEST.json)

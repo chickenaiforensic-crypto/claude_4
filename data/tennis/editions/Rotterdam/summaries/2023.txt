@@ -1,0 +1,10 @@
+Rotterdam — ABN AMRO Open (ATP500)
+Edition: 2023
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Daniil Medvedev
+Runner-up: Jannik Sinner
+Source: Wikipedia 2023 ABN AMRO Open infobox
+Checksum: 60e40c1eafd7... (full value in MANIFEST.json)

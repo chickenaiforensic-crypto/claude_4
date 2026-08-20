@@ -1,0 +1,10 @@
+Cleveland — Cleveland (WTA250)
+Edition: 2025
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Sorana Cirstea
+Runner-up: Ann Li
+Source: Wikipedia 2025 Tennis in the Land - Singles infobox: Draw 32 (4Q/3WC), Seeds 8
+Checksum: 69c0485b4ab9... (full value in MANIFEST.json)

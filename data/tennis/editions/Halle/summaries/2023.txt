@@ -1,0 +1,10 @@
+Halle — Halle Open (ATP500)
+Edition: 2023
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Alexander Bublik
+Runner-up: Andrey Rublev
+Source: Wikipedia 2023 Halle Open infobox
+Checksum: 7ee716479cb4... (full value in MANIFEST.json)

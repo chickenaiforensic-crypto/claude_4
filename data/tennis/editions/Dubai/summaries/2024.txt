@@ -1,0 +1,10 @@
+Dubai — Dubai Tennis Championships (ATP500)
+Edition: 2024
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Ugo Humbert
+Runner-up: Alexander Bublik
+Source: Wikipedia 2024 Dubai Tennis Championships infobox
+Checksum: a5935a7dae23... (full value in MANIFEST.json)

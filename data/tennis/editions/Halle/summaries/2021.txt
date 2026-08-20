@@ -1,0 +1,10 @@
+Halle — Halle Open (ATP500)
+Edition: 2021
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Ugo Humbert
+Runner-up: Andrey Rublev
+Source: Wikipedia 2021 Halle Open infobox + singles page cross-check
+Checksum: 77622c079472... (full value in MANIFEST.json)

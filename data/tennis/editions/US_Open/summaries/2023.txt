@@ -1,0 +1,10 @@
+US Open — US Open (GS)
+Edition: 2023
+Draw size: 128
+Status: closed_verified_gapless
+Match count: 127
+Round coverage: R128(64) R64(32) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Novak Djokovic
+Runner-up: Daniil Medvedev
+Source: Draw 128 structural proof (64 R128 matches, no byes, all rounds full); dates match official calendar
+Checksum: 46d65f80b272... (full value in MANIFEST.json)

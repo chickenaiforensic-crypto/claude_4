@@ -1,0 +1,10 @@
+Cincinnati — Cincinnati (M1000)
+Edition: 2023
+Draw size: 56
+Status: closed_verified_gapless
+Match count: 55
+Round coverage: R64(24) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Coco Gauff
+Runner-up: Karolina Muchova
+Source: Structural proof from bytes+TE: R64 24 matches + 8 seeded byes -> 56 field; 55-match full census
+Checksum: 13be9c45982b... (full value in MANIFEST.json)

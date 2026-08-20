@@ -1,0 +1,10 @@
+Tokyo — Tokyo (WTA500)
+Edition: 2023
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Veronika Kudermetova
+Runner-up: Jessica Pegula
+Source: Wikipedia 2023 Toray Pan Pacific Open - Singles infobox: Draw 28, Seeds 8; byes = top-2 seeds (Swiatek/Pegula) + Guadalajara semifinalists Sakkari and Garcia (Wikipedia-documented non-standard byes)
+Checksum: 21e67c6e437b... (full value in MANIFEST.json)

@@ -1,0 +1,10 @@
+Cincinnati — Cincinnati (M1000)
+Edition: 2025
+Draw size: 96
+Status: closed_verified_gapless
+Match count: 95
+Round coverage: R128(32) R64(32) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Iga Swiatek
+Runner-up: Jasmine Paolini
+Source: Wikipedia 2025 Cincinnati Open - Women's singles infobox: Draw 96, Seeds 32, all seeds bye into 2nd round
+Checksum: 57636bab9fbc... (full value in MANIFEST.json)

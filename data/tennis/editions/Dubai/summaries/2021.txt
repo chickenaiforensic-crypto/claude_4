@@ -1,0 +1,10 @@
+Dubai — Dubai Tennis Championships (ATP500)
+Edition: 2021
+Draw size: 48
+Status: closed_verified_gapless
+Match count: 45
+Round coverage: R64(14) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Aslan Karatsev
+Runner-up: Lloyd Harris
+Source: Wikipedia 2021 Dubai Tennis Championships - Men's singles infobox: Draw 48 (6Q/4WC), Seeds 16 all bye; effective bracket 18 byes/46 players (Wawrinka+Coric withdrew; Sonego+Giustino into bye slots; Basilashvili+Ebden extra byes as Doha/Marseille semifinalists) => complete = 45 rows
+Checksum: 1668ef92bc8d... (full value in MANIFEST.json)

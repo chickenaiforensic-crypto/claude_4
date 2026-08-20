@@ -1,0 +1,10 @@
+Cleveland — Cleveland (WTA250)
+Edition: 2023
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Sara Sorribes Tormo
+Runner-up: Ekaterina Alexandrova
+Source: Wikipedia 2023 Tennis in the Land - Singles infobox: Draw 32 (6Q/4WC), Seeds 8
+Checksum: 1bf4d89c9053... (full value in MANIFEST.json)

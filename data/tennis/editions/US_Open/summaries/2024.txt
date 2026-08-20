@@ -1,0 +1,10 @@
+US Open — US Open (GS)
+Edition: 2024
+Draw size: 128
+Status: closed_verified_gapless
+Match count: 127
+Round coverage: R128(64) R64(32) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Jannik Sinner
+Runner-up: Taylor Fritz
+Source: Draw 128 structural proof (64 R128 matches, no byes, all rounds full); dates match official calendar
+Checksum: c9889fef6c9f... (full value in MANIFEST.json)

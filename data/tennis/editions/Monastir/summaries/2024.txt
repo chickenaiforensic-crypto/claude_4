@@ -1,0 +1,10 @@
+Monastir — Monastir (WTA250)
+Edition: 2024
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Sonay Kartal
+Runner-up: Rebecca Sramkova
+Source: Wikipedia 2024 Jasmin Open - Singles infobox: Draw 32 (4WC/6Q), Seeds 8
+Checksum: 71d5534b07d1... (full value in MANIFEST.json)

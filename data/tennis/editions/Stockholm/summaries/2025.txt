@@ -1,0 +1,10 @@
+Stockholm — Stockholm (ATP250)
+Edition: 2025
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Casper Ruud
+Runner-up: Ugo Humbert
+Source: TE 2025 bracket byte-read: 32 slots, 4 byes (Rune/Humbert/Shapovalov/Ruud) = draw 28
+Checksum: 198f117f464d... (full value in MANIFEST.json)

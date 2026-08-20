@@ -1,0 +1,10 @@
+Rotterdam — ABN AMRO Open (ATP500)
+Edition: 2022
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Felix Auger-Aliassime
+Runner-up: Stefanos Tsitsipas
+Source: Wikipedia 2022 ABN AMRO Rotterdam infobox
+Checksum: 8b6fc7c3f046... (full value in MANIFEST.json)

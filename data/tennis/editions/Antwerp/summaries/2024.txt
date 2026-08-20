@@ -1,0 +1,10 @@
+Antwerp — Antwerp (ATP250)
+Edition: 2024
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Roberto Bautista Agut
+Runner-up: Jiri Lehecka
+Source: TE 2024 bracket byte-read: 32 slots, 4 byes (seeds 1-4 De Minaur/Tsitsipas/Auger-Aliassime/Baez) = draw 28
+Checksum: 0b64392f50c0... (full value in MANIFEST.json)

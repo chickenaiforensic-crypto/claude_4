@@ -1,0 +1,10 @@
+Monastir — Monastir (WTA250)
+Edition: 2023
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Elise Mertens
+Runner-up: Jasmine Paolini
+Source: Wikipedia 2023 Jasmin Open - Singles infobox: Draw 32 (3WC/6Q), Seeds 8
+Checksum: b2de6c860ca8... (full value in MANIFEST.json)

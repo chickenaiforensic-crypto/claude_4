@@ -1,0 +1,10 @@
+Tokyo — Tokyo (ATP500)
+Edition: 2022
+Draw size: 32
+Status: closed_verified_gapless
+Match count: 31
+Round coverage: R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Taylor Fritz
+Runner-up: Frances Tiafoe
+Source: Structural proof: full 32-draw bracket (16 R32 matches = 32 players, no byes, all rounds exactly full after fix); Wikipedia 2022 Rakuten Japan Open records the event; Kyrgios QF W/O wire-documented
+Checksum: f292f038fa04... (full value in MANIFEST.json)

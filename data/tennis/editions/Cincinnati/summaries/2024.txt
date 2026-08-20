@@ -1,0 +1,10 @@
+Cincinnati — Cincinnati (M1000)
+Edition: 2024
+Draw size: 56
+Status: closed_verified_gapless
+Match count: 55
+Round coverage: R64(24) R32(16) R16(8) QF(4) SF(2) F(1)
+Champion: Aryna Sabalenka
+Runner-up: Jessica Pegula
+Source: Wikipedia 2024 Cincinnati Open - Women's singles infobox: Draw 56, Seeds 16, top 8 byes
+Checksum: 26fa6f8b59f8... (full value in MANIFEST.json)

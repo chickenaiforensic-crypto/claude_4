@@ -1,0 +1,10 @@
+Tokyo — Tokyo (WTA500)
+Edition: 2025
+Draw size: 28
+Status: closed_verified_gapless
+Match count: 27
+Round coverage: R32(12) R16(8) QF(4) SF(2) F(1)
+Champion: Belinda Bencic
+Runner-up: Linda Noskova
+Source: TE 2025 bracket byte-read: 32 slots, 4 byes (Bencic/Alexandrova/Noskova/Rybakina incl. reassigned slots) = draw 28
+Checksum: f94cae8dbba3... (full value in MANIFEST.json)
